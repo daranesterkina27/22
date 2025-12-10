@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="about.html">о нас</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="shop.html">каталог</a></li>
+            <li><a href="contact.html">контакты</a></li>
+            <li><a href="about.html#section1">Раздел 1</a></li>
+            <li><a href="about.html#section2">Раздел 2</a></li>
+            <li><a href="about.html#start">начало</a></li>
+            <li><a href="https://www.google.com" target="_blank"><img src="img/orig.jpg" alt="Google" class="nav-icon">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank"><img src="img/orig.jpg" alt="GitHub" class="nav-icon">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="start">О нашей компании</h1>
+        <p>Мы компания веб-разработчиков</p>
+        
+        <!-- Large image with thumbnail -->
+        <div class="image-thumbnail">
+            <a href="img/orig.jpg" target="_blank">
+                <img src="img/orig.jpg" alt="Company">
+            </a>
+            <p><em>Наша компания</em></p>
+        </div>
+
+        <section id="section1">
+            <h2>Раздел 1: Наша история</h2>
+            
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+            <p>Основанная в 2020 году, мы неуклонно развиваемся:</p>
+            
+            <h3>Шкала:</h3>
+            <ol>
+                <li>2022 - Расширение команды</li>
+                <li>2023 - Открытие офиса</li>
+                <li>2024 - Текущий год</li>
+            </ol>
+
+            <h3>Достижения:</h3>
+            <ul>
+                <li>50+ сделанных сайтов
+                    <ul>
+                        <li>безнес-сайты</li>
+                        <li>персональные</li>
+                        <li>коммерческие</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="section2">
+            <h2>Секция 2: Наша команда</h2>
+            <p>Познакомьтесь с нашей небольшой, но преданной своему делу командой:</p>
+            
+            <table class="team-table">
+                <tr>
+                    <th>Имя</th>
+                    <th>Роль</th>
+                    <th>Опыт</th>
+                    <th>Фото</th>
+                </tr>
+                <tr>
+                    <td>Мария К.</td>
+                    <td>Дизайнер</td>
+                    <td>5 years</td>
+                    <td><img src="img/18.jpg" alt="Мария" class="team-photo"></td>
+                </tr>
+                <tr>
+                    <td>Марк Д.</td>
+                    <td>Разработчик</td>
+                    <td>4 years</td>
+                    <td><img src="img/XXL_heightё.webp" alt="Марк" class="team-photo"></td>
+                </tr>
+                <tr>
+                    <td>Алексей В.</td>
+                    <td>Разработчик</td>
+                    <td>4 years</td>
+                    <td><img src="img/3aaa.jpg" alt="Алексей" class="team-photo"></td>
+                </tr>
+                <tr>
+                    <td>Виктория Д.</td>
+                    <td>Аналитик</td>
+                    <td>6 years</td>
+                    <td><img src="img/XXXL.webp" alt="Виктория" class="team-photo"></td>
+                </tr>
+            </table>
+            
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Мой веб-сайт. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

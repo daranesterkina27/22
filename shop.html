@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог услуг - Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="about.html">о нас</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="shop.html" class="active">каталог</a></li>
+            <li><a href="contact.html">контакты</a></li>
+            <li><a href="shop.html#section1">Раздел 1</a></li>
+            <li><a href="shop.html#section2">Раздел 2</a></li>
+            <li><a href="shop.html#start">начало</a></li>
+            <li><a href="https://www.google.com" target="_blank"><img src="img/orig.jpg" alt="Google" class="nav-icon">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank"><img src="img/orig.jpg" alt="GitHub" class="nav-icon">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="start">Каталог услуг веб-разработки</h1>
+        <p class="intro-text">Выберите нужную услугу из нашего каталога. Все услуги включают консультацию и поддержку.</p>
+        
+        <section id="section1">
+            <h2>Раздел 1: Базовые услуги</h2>
+            <p>Наши популярные предложения для малого и среднего бизнеса:</p>
+            
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+        </section>
+
+        <div class="shop-container">
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/ecommerce-shop-figma-template.png" alt="Лендинг-страница">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Лендинг-страница</h3>
+                    <p class="shop-item-description">Одностраничный сайт для продвижения вашего продукта или услуги</p>
+                    <div class="shop-item-price">от 15 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(1)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/tech.png" alt="Корпоративный сайт">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Корпоративный сайт</h3>
+                    <p class="shop-item-description">Многостраничный сайт для представления компании в интернете</p>
+                    <div class="shop-item-price">от 35 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(2)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/XXL_height.webp" alt="Интернет-магазин">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Интернет-магазин</h3>
+                    <p class="shop-item-description">Полнофункциональный онлайн-магазин с корзиной и оплатой</p>
+                    <div class="shop-item-price">от 80 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(3)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/osnovnye-sposoby-prodvizheniya-na-marketplejsah.jpg" alt="Веб-дизайн">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Веб-дизайн</h3>
+                    <p class="shop-item-description">Профессиональный дизайн интерфейса для вашего сайта</p>
+                    <div class="shop-item-price">от 20 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(4)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/i (6).webp" alt="Техническая поддержка">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Техническая поддержка</h3>
+                    <p class="shop-item-description">Ежемесячное обслуживание и обновление вашего сайта</p>
+                    <div class="shop-item-price">от 5 000 ₽/мес</div>
+                    <button class="shop-item-button" onclick="addToCart(5)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/XXXL.webp" alt="Мобильное приложение">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Мобильное приложение</h3>
+                    <p class="shop-item-description">Разработка нативного мобильного приложения для iOS и Android</p>
+                    <div class="shop-item-price">от 150 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(6)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/3aaa.jpg" alt="SEO-оптимизация">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">SEO-оптимизация</h3>
+                    <p class="shop-item-description">Продвижение сайта в поисковых системах</p>
+                    <div class="shop-item-price">от 10 000 ₽/мес</div>
+                    <button class="shop-item-button" onclick="addToCart(7)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/copy_page.webp" alt="Контент-менеджмент">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Контент-менеджмент</h3>
+                    <p class="shop-item-description">Создание и управление контентом для вашего сайта</p>
+                    <div class="shop-item-price">от 8 000 ₽/мес</div>
+                    <button class="shop-item-button" onclick="addToCart(8)">Выбрать</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div class="shop-item-image">
+                    <img src="img/i (7).webp" alt="Брендинг">
+                </div>
+                <div class="shop-item-content">
+                    <h3 class="shop-item-title">Брендинг</h3>
+                    <p class="shop-item-description">Разработка фирменного стиля и логотипа</p>
+                    <div class="shop-item-price">от 25 000 ₽</div>
+                    <button class="shop-item-button" onclick="addToCart(9)">Выбрать</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="section2">
+            <h2>Раздел 2: Дополнительная информация</h2>
+            <p>Все услуги включают консультацию, техническую поддержку и гарантию качества.</p>
+            
+            <div class="image-gallery">
+                <figure class="image-with-caption">
+                    <img src="img/mebel-dlya-operacionnogo-zala-02.jpg" alt="Наш офис">
+                    <figcaption>
+                        <strong>Наш офис</strong><br>
+                        <em>Современное рабочее пространство, где создаются лучшие веб-решения</em>
+                    </figcaption>
+                </figure>
+                
+                <figure class="image-with-caption">
+                    <img src="img/97ef718bd9fdc17bc9fdbef6aed24ae3.webp" alt="Рабочий процесс">
+                    <figcaption>
+                        <strong>Рабочий процесс</strong><br>
+                        <em>Команда профессионалов работает над каждым проектом с особым вниманием</em>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Мой веб-сайт. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function addToCart(itemId) {
+            alert('Услуга добавлена в корзину! ID: ' + itemId);
+        }
+    </script>
+</body>
+</html>
+
+

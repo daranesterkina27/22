@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="about.html">о нас</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="shop.html">каталог</a></li>
+            <li><a href="contact.html">контакты</a></li>
+            <li><a href="contact.html#section1">Раздел 1</a></li>
+            <li><a href="contact.html#section2">Раздел 2</a></li>
+            <li><a href="contact.html#start">начало</a></li>
+            <li><a href="https://www.google.com" target="_blank"><img src="img/orig.jpg" alt="Google" class="nav-icon">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank"><img src="img/orig.jpg" alt="GitHub" class="nav-icon">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="start">Связь с нами</h1>
+
+        <section id="section1">
+            <h2>Раздел 1: Контактная информация</h2>
+            
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+            
+            <p>Свяжитесь с нами, используя эти способы:</p>
+            
+            <table class="contact-table">
+                <tr>
+                    <th>Способы связи</th>
+                    <th>Детали</th>
+                    <th>Часы</th>
+                    <th>Иконки</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>contact@mywebsite.com</td>
+                    <td>24/7</td>
+                    <td><img src="img/i (6)1.webp" alt="Email" class="table-icon"></td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td>89876062243</td>
+                    <td>9:00-5:00</td>
+                    <td><img src="img/i (7).webp" alt="Phone" class="table-icon"></td>
+                </tr>
+            </table>
+
+            <h3>Офис:</h3>
+            <ol>
+                <li>Главный офис
+                    <ul>
+                        <li>Адрес: м. Тушинская</li>
+                        <li>Город: Москва</li>
+                        <li>Телефон: 7 (985) 153-4567</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section id="section2">
+            <h2>Раздел 2: Контактные формы</h2>
+            <p>Используйте эти формы, чтобы связаться с нами:</p>
+            
+            <div class="on-page-nav">
+                <a href="#section1">Раздел 1</a> | 
+                <a href="#section2">Раздел 2</a> | 
+                <a href="#start">В начало</a>
+            </div>
+            
+            <h3>Форма для получения личной контактной информации</h3>
+            <form action="https://httpbin.org/post" method="POST" onsubmit="return validateContactForm(this)" id="contact-form">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="last_name">Фамилия:</label></td>
+                        <td><input type="text" id="last_name" name="last_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first_name">Имя:</label></td>
+                        <td><input type="text" id="first_name" name="first_name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mobile_phone">Моб.телефон:</label></td>
+                        <td><input type="tel" id="mobile_phone" name="mobile_phone" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message_date">Дата сообщения:</label></td>
+                        <td><input type="date" id="message_date" name="message_date" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="form-submit-cell">
+                            <button type="submit">Сохранить информацию</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <h3>Форма для подачи заказа/отзыва</h3>
+            <form action="https://httpbin.org/post" method="POST" onsubmit="return validateOrderForm(this)" id="order-form">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="customer_name">Имя:</label></td>
+                        <td><input type="text" id="customer_name" name="customer_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="order_number">Номер заказа:</label></td>
+                        <td><input type="number" id="order_number" name="order_number" min="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product_type">Тип продукта:</label></td>
+                        <td>
+                            <input type="radio" id="website" name="product_type" value="website" required>
+                            <label for="website">Вебсайт</label><br>
+                            <input type="radio" id="design" name="product_type" value="design">
+                            <label for="design">Дизайн</label><br>
+                            <input type="radio" id="consulting" name="product_type" value="consulting">
+                            <label for="consulting">Консультация</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="services">Дополнительные услуги:</label></td>
+                        <td>
+                            <input type="checkbox" id="support" name="services" value="support">
+                            <label for="support">Поддержка</label><br>
+                            <input type="checkbox" id="updates" name="services" value="updates">
+                            <label for="updates">Обновления</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="order_date">Дата заказа:</label></td>
+                        <td><input type="date" id="order_date" name="order_date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Пароль:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="review_rating">Оценка:</label></td>
+                        <td><input type="number" id="review_rating" name="review_rating" min="1" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="review_text">Мнение:</label></td>
+                        <td><textarea id="review_text" name="review_text" rows="3" placeholder="Напишите отзыв"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="hidden" id="form_type" name="form_type" value="order_review">
+                            <input type="hidden" id="submission_time" name="submission_time" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="form-submit-cell">
+                            <button type="submit">Отправить заказ/Отзыв</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <section>
+            <h2>Картинки</h2>
+            <div class="image-gallery">
+                <figure class="image-with-caption">
+                    <img src="img/i (6).webp" alt="Office">
+                    <figcaption>
+                        <strong>Наш офис</strong><br>
+                        <em>Главная зона</em>
+                    </figcaption>
+                </figure>
+                <figure class="image-with-caption">
+                    <img src="img/mebel-dlya-operacionnogo-zala-02.jpg" alt="Meeting Room">
+                    <figcaption>
+                        <strong>Комната обсуждений</strong><br>
+                        <em>Обслуживание</em>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Мой веб-сайт. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Set submission time for hidden field only when form is submitted (not on page load)
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderForm = document.getElementById('order-form');
+            if (orderForm) {
+                orderForm.addEventListener('submit', function() {
+                    const submissionTimeField = document.getElementById('submission_time');
+                    if (submissionTimeField) {
+                        submissionTimeField.value = new Date().toISOString();
+                    }
+                });
+            }
+        });
+    </script>
+
+
+
+
+    <script>
+    </script>
+</body>
+</html>
